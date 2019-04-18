@@ -38,7 +38,7 @@ abstract class FirestoreAdapter<VH : RecyclerView.ViewHolder>(private var query:
 
     fun startListening() {
         if (query != null && registration == null) {
-            registration = query!!.addSnapshotListener(this)
+            registration = query?.addSnapshotListener(this)
         }
     }
 

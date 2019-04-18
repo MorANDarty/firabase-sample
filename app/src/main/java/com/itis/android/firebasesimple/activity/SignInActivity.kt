@@ -21,6 +21,7 @@ import com.google.android.gms.common.api.GoogleApiClient
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.PhoneAuthProvider
 import com.itis.android.firebasesimple.R
 import com.itis.android.firebasesimple.utils.SoftKeyboard
 import kotlinx.android.synthetic.main.activity_sign_in.*
@@ -29,6 +30,7 @@ class SignInActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
 
     private var googleApiClient: GoogleApiClient? = null
     private var firebaseAuth: FirebaseAuth? = null
+    private val phoneAuthProvider: PhoneAuthProvider? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,7 +81,9 @@ class SignInActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         btn_to_signup.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
-        btn_reset_password.setOnClickListener { }
+
+        btn_reset_password.setOnClickListener { startActivity(Intent(this, ResetPasswordActivity::class.java)) }
+
         btn_login.setOnClickListener {
             val email = email.text.toString()
             val password = password.text.toString()
@@ -117,6 +121,8 @@ class SignInActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
                             finish()
                         }
                     }
+
+
         }
     }
 
@@ -169,6 +175,10 @@ class SignInActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
     }
 
     private fun initTextListeners() {
+        btn_phone_number_sign_in.setOnClickListener({
+            val intent = Intent(this@SignInActivity, PhoneSignInActivity::class.java)
+            startActivity(intent)
+        })
         email.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
 

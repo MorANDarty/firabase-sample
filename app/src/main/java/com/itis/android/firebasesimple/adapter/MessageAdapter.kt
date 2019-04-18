@@ -20,9 +20,7 @@ import com.itis.android.firebasesimple.utils.MESSAGE_URL
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_message.*
 
-class MessageAdapter(
-        query: Query
-) : FirestoreAdapter<MessageAdapter.MessageViewHolder>(query) {
+class MessageAdapter(query: Query) : FirestoreAdapter<MessageAdapter.MessageViewHolder>(query) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -33,9 +31,7 @@ class MessageAdapter(
         holder.bind(getSnapshot(position))
     }
 
-    inner class MessageViewHolder(
-            override val containerView: View
-    ) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+    inner class MessageViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         fun bind(snapshot: DocumentSnapshot) {
             val message = snapshot.toObject(Message::class.java) ?: return

@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "468749654684",
-    "firebase_url": "https://lab-sample.firebaseio.com",
-    "project_id": "lab-sample",
-    "storage_bucket": "lab-sample.appspot.com"
+    "project_number": "233526982232",
+    "firebase_url": "https://stuffercourcework.firebaseio.com",
+    "project_id": "stuffercourcework",
+    "storage_bucket": "stuffercourcework.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:468749654684:android:67e80e998d7ac888",
+        "mobilesdk_app_id": "1:233526982232:android:67e80e998d7ac888",
         "android_client_info": {
           "package_name": "com.itis.android.firebasesimple"
         }
       },
       "oauth_client": [
         {
-          "client_id": "468749654684-8brc7jki3suatggt31jmj741btji38va.apps.googleusercontent.com",
+          "client_id": "233526982232-5firep98h022mfrs9lraqflirpkt2njv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.itis.android.firebasesimple",
-            "certificate_hash": "57e5a702cf08220296e781c6f6c24007e7732c4e"
+            "certificate_hash": "65c3501768507e16ae9aa6b3a92c928ada5fd707"
           }
         },
         {
-          "client_id": "468749654684-cgrdit4asvukd00do0mo1620pbavvasu.apps.googleusercontent.com",
+          "client_id": "233526982232-0itiiu28q4uvnqgnh8kc4siev5uns3lr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCfu_tQelyc8rzZL8JA73WsELDBBU1K42U"
+          "current_key": "AIzaSyB7mudjS1q9Zm7qr9Lgnxy4VnbLcuWDCS8"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "468749654684-cgrdit4asvukd00do0mo1620pbavvasu.apps.googleusercontent.com",
+              "client_id": "233526982232-0itiiu28q4uvnqgnh8kc4siev5uns3lr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

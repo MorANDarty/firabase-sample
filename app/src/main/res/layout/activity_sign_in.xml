@@ -82,6 +82,16 @@
             android:textColor="@color/colorAccent" />
 
         <Button
+            android:id="@+id/btn_phone_number_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:text="Sign in with phone number"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+        <Button
             android:id="@+id/btn_to_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
